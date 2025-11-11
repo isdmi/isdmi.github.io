@@ -1,50 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>あなたのＨＰタイトル</title>
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="index.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>システムエンジニア ポートフォリオ</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+header { background: #2d3e50; color: white; padding: 40px 20px; text-align: center; }
+section { max-width: 900px; margin: 40px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+h2 { border-left: 6px solid #2d3e50; padding-left: 10px; }
+.skills-list, .projects-list { list-style: none; padding: 0; }
+.skills-list li, .projects-list li { padding: 6px 0; }
+footer { text-align: center; padding: 20px; color: #777; }
+.project-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+.project-card h3 { margin-top: 0; }
+.contact-link { color: #2d3e50; }
+.skill-item { margin-bottom: 15px; }
+.bar { background: #ddd; height: 12px; border-radius: 6px; overflow: hidden; }
+.bar .level { background: #2d3e50; height: 100%; border-radius: 6px; }
+.stars { font-size: 20px; color: #f1c40f; margin-top: 5px; }
+.skill-category { margin-bottom: 25px; }
+.skill-category h3 { margin-bottom: 10px; color: #333; }
+.skill-item { margin: 6px 0; font-size: 16px; }
+.stars { color: #f1c40f; margin-left: 8px; font-size: 18px; }
+.years { color: #666; margin-left: 6px; font-size: 14px; }
+</style>
 </head>
 <body>
-<div id="outer">
 <header>
-<h1>あなたのＨＰタイトル</h1>
+<h1> Ishida Mitsuhito </h1>
+<p>システムエンジニア / ソフトウェアエンジニア</p>
 </header>
-<main>
-<div id="text">
-<h2>記事ページ見出し・大</h2>
-<p>文章あれこれ</p>
-<h3>記事ページ見出し・中</h3>
-<p>文章あれこれ</p>
-<h4>記事ページ見出し・小</h4>
-<p>文章あれこれ</p>
+
+
+<section>
+<h2>プロフィール</h2>
+<p>Windowsフォームのアプリ開発、Webアプリのバックエンドなどを業務でやっています。</p>
+<p>基本設計～運用まで実施しています。</p>
+</section>
+
+
+<section>
+<h2>スキル</h2>
+
+
+<div class="skill-category">
+<h3>プログラミング / フレームワーク</h3>
+<div class="skill-item"><strong>C#</strong><span class="stars">★★★★★</span><span class="years">（10年以上）</span></div>
+<div class="skill-item"><strong>VB.NET</strong><span class="stars">★★★★☆</span><span class="years">（6〜8年）</span></div>
+<div class="skill-item"><strong>ASP.NET</strong><span class="stars">★★★★☆</span></div>
+<div class="skill-item"><strong>HTML</strong><span class="stars">★★★★☆</span></div>
+<div class="skill-item"><strong>Java</strong><span class="stars">★★★☆☆</span><span class="years">（2〜3年）</span></div>
+<div class="skill-item"><strong>Spring Framework</strong><span class="stars">★★★☆☆</span></div>
 </div>
-</main>
-<aside>
-<div id="menu">
-<div id="left">
-<div class="title">menu</div>
-<div class="side">
-<ul>
-<li>記事ページへのリンク</li>
-<li>記事ページへのリンク</li>
-</ul>
+
+
+<div class="skill-category">
+<h3>データベース</h3>
+<div class="skill-item"><strong>Oracle</strong><span class="stars">★★★★★</span><span class="years">（10年以上）</span></div>
+<div class="skill-item"><strong>SQL Server</strong><span class="stars">★★★★☆</span></div>
+<div class="skill-item"><strong>PostgreSQL</strong><span class="stars">★★★★☆</span></div>
 </div>
+
+
+<div class="skill-category">
+<h3>開発ツール・環境</h3>
+<div class="skill-item"><strong>Git</strong><span class="stars">★★★★★</span></div>
+<div class="skill-item"><strong>AWS</strong><span class="stars">★★☆☆☆</span><span class="years">（1年程度）</span></div>
+<div class="skill-item"><strong>Linux</strong><span class="stars">★★★★☆</span></div>
 </div>
-<div id="right">
-<div class="title">menu</div>
-<div class="side">
-<ul>
-<li>記事ページへのリンク</li>
-<li>記事ページへのリンク</li>
-</ul>
+
+
+<div class="skill-category">
+<h3>ドキュメント作成</h3>
+<div class="skill-item">Excel / Word / PowerPoint による設計書作成が可能</div>
 </div>
-</div></div>
-</aside>
-<footer>© 2010 あなたのホームページ</footer>
+
+
+<div class="skill-category">
+<h3>その他</h3>
+<div class="skill-item">大規模システム開発におけるテックリード経験あり（フレームワーク開発担当）</div>
 </div>
+</section>
+
+
+<section>
+<h2>制作実績・プロジェクト</h2>
+<div class="project-card">
+<h3>プロジェクト名 1</h3>
+<p>概要：ここにプロジェクトの説明を書きます。</p>
+<p><strong>担当範囲:</strong> 設計 / 実装 / テスト / AWS構築 など</p>
+<p><strong>技術:</strong> C#, .NET, AWS, Lambda</p>
+<p><a class="contact-link" href="#">GitHubリンク</a></p>
+</div>
+
+
+<div class="project-card">
+<h3>プロジェクト名 2</h3>
+<p>概要：ここにプロジェクトの説明を書きます。</p>
+<p><strong>担当範囲:</strong> 要件定義 / UI作成 / API開発 など</p>
+<p><strong>技術:</strong> React, TypeScript, Node.js</p>
+<p><a class="contact-link" href="#">GitHubリンク</a></p>
+</div>
+</section>
+
+
+<section>
+<h2>お問い合わせ</h2>
+<p>メール: <a class="contact-link" href="mailto:example@example.com">example@example.com</a></p>
+<p>GitHub: <a class="contact-link" href="#">https://github.com/yourname</a></p>
+<p>LinkedIn: <a class="contact-link" href="#">プロフィールリンク</a></p>
+</section>
+
+
+<footer>
+© 2025 Your Name
+</footer>
 </body>
 </html>
